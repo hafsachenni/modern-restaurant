@@ -1,6 +1,6 @@
 import React from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
-import { FaCookie } from 'react-icons/fa';
+import { MdClose } from 'react-icons/md';
 import images from '../../constants/images';
 import './Navbar.css';
 import { useState } from 'react';
@@ -31,7 +31,7 @@ const Navbar = () => {
 
         {menuState && (
         <div className='app__navbar-smallmenu_overlay flex__center slide-bottom'>
-          <FaCookie color="black"  fontSize={27} className="overlay__close" onClick={() => setMenuState(false)} />
+          <MdClose color="black"  fontSize={27} className="overlay__close" onClick={() => setMenuState(false)} />
           <ul className='app__navbar-smallmenu-links'>
             <li className='p__opensans'><a href="#home">Home</a></li>
             <li className='p__opensans'><a href="#about">About</a></li>
